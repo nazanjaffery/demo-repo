@@ -1,0 +1,84 @@
+
+init
+	initializes git 
+status
+	gives you status of all/unstaged files
+clone
+	bring repository that is hosted somewhere like github into a folder on your local machine
+git add
+	Track your files and changes in git
+commit 
+	save your changes in Git
+	
+push 
+	Upload Git commits to a remote repo, like bitBucket
+pull 
+	Download chnages from remote repo to your local machine, the opposite of push.
+	
+	
+git commit -m "commit msg" -m "description"
+git push origin master 
+	origin - origin means location of repo
+	
+git remote add origin "new repo url"
+	remote - somewhere else not in the local machine
+	this command is saying to git that add the ulr location as a repo location which is at remote location
+	
+git remote -v
+	list all remote repo the user is connected to
+	
+git push origin master 
+	to get rid of origin master you can type the command "git push -u origin master"
+	-u = set upstream, after that user does not need to type "origin master"
+	
+git branch 
+	list down all branches
+	
+git checkout -b branch_name
+	create if not already present a branch and switch to it
+
+git diff
+	show new changes from last commit
+git diff branch_name
+	should be done from master branch
+	shows diff in all files
+	
+git branch -d branch_name
+	delete branch
+	
+	
+git commit -am "add files" 
+	-am can only be used for modified files.
+		
+git merge master
+	if you are working on feature branch and other people are pushing into master 
+	you don't want to lag behind so you can run the mentioned command and make your
+	local master up to date
+	
+	
+git reset 
+	redo last staging file
+	
+git reset HEAD~1
+	head points to last commit. HEAD~1 means move head to last but one commit.
+	it will unstage and uncommit the last commit.
+	
+git log
+	to list down all your commits.
+	
+git reset commitHashVal
+	it will unstaged any changes after the commitHashVal commit.
+	the changes will be there in files but it will not be saved or staged in GIT.
+	
+git reset --hard commitHashVal
+	it will not only unstage the commit but also remove all changes from the files.
+	
+git remote remove origin
+	it will remove the remote origin
+	
+	
+rm -rf .git
+	it will undo git init
+	it will delete git
+	
+	
