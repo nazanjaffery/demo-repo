@@ -76,6 +76,9 @@ git reset --hard commitHashVal
 git remote remove origin
 	it will remove the remote origin
 	
+
+git reset --hard
+	Revert changes to modified files.
 	
 rm -rf .git
 	it will undo git init
